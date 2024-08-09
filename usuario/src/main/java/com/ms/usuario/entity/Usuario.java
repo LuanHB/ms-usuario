@@ -21,12 +21,13 @@ import java.util.UUID;
 public class Usuario {
 
     @Id
+    @Column(name = "usr_id")
     private String id;
 
-    @Column(nullable = false)
+    @Column(name = "usr_nome", nullable = false)
     private String nome;
 
-    @Column(nullable = false)
+    @Column(name = "usr_email", nullable = false)
     private String email;
 
     @PrePersist
